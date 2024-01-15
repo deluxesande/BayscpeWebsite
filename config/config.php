@@ -24,6 +24,7 @@
         'default_locale'=>'en_US',
         'date_format'=>'Y-m-d',
         'time_format'=>'H:i:s',
+        error_log_path=>'../storage/logs/error.log',
         
   ],
 
@@ -56,6 +57,7 @@
          * 
          */
    
+
        
     'mail'=>[
      
