@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/54c6d49d8b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+    body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+    .col2 {
+           background-color: orangered; 
+           color: white;
+            display: flex; 
+            justify-content: center; 
+            flex-direction: column; 
+            align-items: center;
+    }
+  i {
+    color: white;
+    font-size: 25px ;
+    cursor: pointer;
+    letter-spacing: 20px;
+
+  }
+
+  i:hover {
+    color: white;
+    text-shadow: 0px 0px 3px black;
+  }
+      body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container my-5 ">
+            <div class="row round" style="box-shadow: 0px 0px 5px black;">
+              <div class="col-md-6  p-5" >
+                <form action="/action_page.php" class="was-validated" >
+                    <div class="mb-3 mt-3">
+                        <label for="username"  id ="signup" class="form-label">Username:</label>
+                        <input type="username" class="form-control" id="username" placeholder="Enter username" name="username" required>
+                        <div class="valid-feedback">Username Detected</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                    <div class="mb-3 mt-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                      <div class="valid-feedback">Valid email</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="pwd" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+                      <div class="valid-feedback">Password Detected</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confpwd" class="form-label">Confirm Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="confirm  password" name="confpwd" required>
+                        <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="date" class="form-label">Date of Birth:</label>
+                        <input type="date" class="form-control" id="date" placeholder="Enter password" name="pwd" required>
+                        <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                    <div class="form-check mb-3">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember" readonly> Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: orangered; color: white">Login</button>
+                  </form>
+            </div>
+                <div class="col-md-6   p-2 text-center col2">
+                    <h2 >SIGN UP PAGE</h2>
+                    <p>Sign up to have access Bayscopes Services and Products</p>
+                    <ul>
+                        <li style="list-style: none; ">Already have an account? <a class="h4 btn  btn-light" href="login.html" style="text-decoration: none; color: rgb(0, 0, 0);">Log in </a></li>
+                    </ul>
+                   <div class="btn-group gap-3" id="signup">
+                      <a href="#signup" class="btn btn-outline-dark" > SIGN UP</a>
+                      <a href="login.html" class="btn btn-outline-dark"> LOG IN</a>  
+                   </div>
+                   <div class="container pt-5 ">
+                    <span style="color: black; margin-right: 10px;" class="h6">Follow us On:</span>
+                    <a href="#" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                   </div>
+                   
+                  
+                </div>
+               
+        </div>
+      </div>
+   
+</body>
+</html>
