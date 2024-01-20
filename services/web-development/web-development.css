@@ -1,0 +1,71 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30.5%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+h3 span {
+    font-size: 16px;
+}
+
+/* TODO: delete */
+.list-left {
+    text-align: left;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.fas {
+    color: #007bff;
+}
+
+/* Gap between input and label */
+.fas + label {
+    margin-left: 20px;
+}
+
+.btn-full-w {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-container .card:nth-child(2) {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.card-container .card:nth-child(2):hover {
+    transform: scale(1.15);
+}
+
+.card-container .card:nth-child(2) h3,
+.card-container .card:nth-child(2) p:nth-child(1) {
+    color: #007bff;
+}
+
+.card-container .card:nth-child(2) .btn-full-w {
+    border: none;
+    color: #fff;
+    background-color: #007bff;
+}
