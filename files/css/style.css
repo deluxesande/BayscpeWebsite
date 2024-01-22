@@ -74,7 +74,16 @@ img {
 
 p {
   margin: 0 0 15px;
-  color: #444;
+  color:black;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+li{
+  color:black;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 18px;
 }
 
 h1,
