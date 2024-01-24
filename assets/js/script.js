@@ -29,10 +29,8 @@
 //    }
 // }
 const passwordInput = document.querySelector(".pass-field input");
-const passwordInput3 = document.querySelector('.new .pwd');
 const passwordInput2 = document.querySelector(".confpassword input");
 const eyeIcon = document.querySelector(".pass-field i");
-const eyeIcon3 = document.querySelector('.new .i')
 const eyeIcon2 = document.querySelector(".confpassword i");
 const requirementList = document.querySelectorAll(".requirement-list li");
 
@@ -97,15 +95,6 @@ eyeIcon2.addEventListener("click", () => {
     eyeIcon2.className = `fa-solid fa-eye${passwordInput2.type === "password" ? "" : "-slash"}`;
 });
 
-
-eyeIcon3.addEventListener("click", () => {
-    // Toggle the password input type between "password" and "text"
-// alert('helo') ;
-    passwordInput3.type = passwordInput3.type === "password" ? "text" : "password";
-
-    // Update the eye icon class based on the password input type
-    eyeIcon3.className = `fa-solid fa-eye${passwordInput3.type === "password" ? "" : "-slash"}`;
-});
 
 
 
