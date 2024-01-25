@@ -323,17 +323,24 @@
             <div id="about" class="about-area area-padding">
                 <div class="row row-sm-12 row-md-12 row-xs-12">
                     <!-- single-well start-->
-                    <div class="hero-image container">
-                        <!-- HERO IMAGE -->
-                        <img src="../../assets/images/WD-Hero.jpg" />
+                    <div class="hero-image container slider">
+                        <div class="slide active">
+                            <img src="../../assets/images/WD-Hero.jpg" />
+                        </div>
+                        <div class="slide">
+                            <img src="../../assets/images/WD-Hero2.jpg" />
+                        </div>
+                        <div class="slide">
+                            <img src="../../assets/images/WD-Hero3.jpg" />
+                        </div>
                     </div>
-                    <div class="container" style="margin-top: 60px">
+                    <!-- <div class="container" style="margin-top: 60px">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="section-headline text-center">
                                 <h2>Website Development</h2>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- single-well end-->
                     <div class="container" style="margin-top: 40px">
                         <div class="well-middle">
@@ -910,6 +917,17 @@
                     icon.classList.remove("fa-times");
                     icon.classList.add("fa-chevron-down");
                 }
+            }
+
+            // Slidder scripts
+            let slides = document.querySelectorAll(".slide");
+            let currentSlide = 0;
+            let slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+            function nextSlide() {
+                slides[currentSlide].className = "slide";
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].className = "slide active";
             }
         </script>
     </body>
