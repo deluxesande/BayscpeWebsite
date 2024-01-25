@@ -32,6 +32,7 @@
 html,
 body {
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 .floatleft {
@@ -74,7 +75,14 @@ img {
 
 p {
   margin: 0 0 15px;
-  color: #444;
+  color:black;
+  font-weight: 100;
+  font-size: 20px;
+}
+li{
+  color:black;
+  font-weight: 100;
+  font-size: 18px;
 }
 
 h1,
@@ -83,7 +91,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
   margin: 0 0 15px;
   color: #444;
   font-weight: 500;
@@ -136,8 +143,8 @@ a:hover {
 
 body {
   background: #fff none repeat scroll 0 0;
+  font-family: 'Raleway', sans-serif;
   color: #444;
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   text-align: left;
   overflow-x: hidden;
@@ -793,8 +800,6 @@ div#preloader {
 }
 
 .blog-btn::after {
-  content: "\f178";
-  font-family: fontawesome;
   position: absolute;
   right: -20px;
   top: 1px;

@@ -13,10 +13,10 @@
   <link href="files/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
-    rel="stylesheet">
-<!--font awesome-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0
   /css/font-awesome.min.css">
 
@@ -37,16 +37,18 @@
   <!-- Main Stylesheet File -->
   <link href="files/css/style.css" rel="stylesheet">
 
+
   <!-- Responsive Stylesheet File -->
   <link href="files/css/responsive.css" rel="stylesheet">
   <style>
     @media screen and (max-width: 600px) {
-      video{
-        width: 400px;
+      video {
+        width: 380px;
       }
     }
-    video:hover{
-transform: scale(1.2);
+
+    video:hover {
+      transform: scale(1.2);
     }
   </style>
 
@@ -75,7 +77,7 @@ transform: scale(1.2);
                   <span class="icon-bar"></span>
                 </button>
                 <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                <a class="navbar-brand page-scroll sticky-logo" href="/">
                   <h1>BayScope</h1>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -85,42 +87,49 @@ transform: scale(1.2);
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active">
-                    <a class="page-scroll" href="#home">Home</a>
+                    <a class="page-scroll" href="/">Home</a>
                   </li>
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span
                         class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>Software development</a></li>
-                      <li><a href=#>Web development</a></li>
-                      <li><a href=#>Mobile development</a></li>
-                      <li><a href=#>App development</a></li>
+
+                       <li><a href='/services/software-development'> Custom Software development</a></li>
+                      <li><a href='/services/web-developement'>Web development</a></li>   
+                      <li><a href='/services/app-development/'>App development</a></li>
+
+                      <li><a href='/services/software-development'> Custom Software development</a></li>
+                      <li><a href='/services/web-developement'>Web development</a></li>   
+                      <li><a href='/services/app-development/'>App development</a></li>
+
                       <li><a href=#>QA Testing</a></li>
-                      
+
                       <li><a href=#>Product Design</a></li>
                     </ul>
                   </li>
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<span
                         class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                      <li><a href=#>About Us</a></li>
-                      <li><a href=#>Our Services</a></li>
-                      <li><a href=#>Our Team</a></li>
+                      <li><a href='/forbusiness/'>Bayscope Business</a></li>
+                      <li><a href='/forschools/'>Bayscope Schools</a></li>
+                      <li><a href=#>Bayscope Healths</a></li>
                       <li><a href=#>Leadership</a></li>
                       <li><a href=#>Pricing Plan</a></li>
                       <li><a href=#>FAQ</a></li>
                     </ul>
                   </li>
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<span
-      class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href=#>Bayscope Business</a></li>
-        <li><a href=#>Bayscope Schools</a></li>
-        <li><a href=#>Bayscope Healths</a></li>
-        <li><a href=#>BQuery</a></li>
-        <li><a href=#>ContriFund</a></li>
-        <li><a href=#>Portfolio 6</a></li>
-        <li><a href=#>Portfolio 7</a></li>
-        </ul>
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href=#>BQuery</a></li>
+                      <li><a href=#>Contrifund</a></li>
+
+                      <li class="text-secondary">Bundles</li>
+                      <hr>
+
+                      <li><a href=#>ProSuite</a></li>
+                      <li><a href="products/edu360.html"> Edu360</a></li>
+
+                    </ul>
                   </li>
 
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<span
@@ -131,18 +140,18 @@ transform: scale(1.2);
                     </ul>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="contact.html">Contact</a>
                   </li>
 
                   <li class="yo">
                     <a class="page-scroll" href="#portfolio"> </a>
                   </li>
-                 <li class="">
-                     <a href="/client/signup"> <i class="fa fa-user-o" aria-hidden="true"></i></a>    
-                 </li>
-                 <li class="pl-2">
-                  <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>    
-              </li>
+                  <li class="">
+                    <a href="/client/signup"> <i class="fa fa-user-o" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="pl-2">
+                    <a href="/client/cart"> <i class="fa fa-shopping-cart fa-bold" aria-hidden="true"></i></a>
+                  </li>
                 </ul>
               </div>
               <!-- navbar-collapse -->
@@ -174,7 +183,7 @@ transform: scale(1.2);
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">#  WHERE INNOVATION MEETS RELIABILITY</h2>
+                  <h2 class="title1"># WHERE INNOVATION MEETS RELIABILITY</h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
@@ -240,8 +249,8 @@ transform: scale(1.2);
       </div>
     </div>
   </div>
-   <!-- direction 4 -->
-   <div id="slider-direction-4" class="slider-direction slider-two">
+  <!-- direction 4 -->
+  <div id="slider-direction-4" class="slider-direction slider-two">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -264,8 +273,8 @@ transform: scale(1.2);
       </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
+  </div>
   <!-- End Slider Area -->
 
   <!-- Start About area -->
@@ -283,9 +292,9 @@ transform: scale(1.2);
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="well-left">
             <div class="single-well">
-            
-               <video src="/assets/videos/BayscopeIT intro.mp4" autoplay   controls  width="500px"></video>
-          
+
+              <video src="assets/videos/BayscopeIT intro.mp4" autoplay controls width="500px" height="500px"></video>
+
             </div>
           </div>
         </div>
@@ -296,35 +305,41 @@ transform: scale(1.2);
               <a href="#">
                 <h4 class="sec-head">IT SOLUTIONS</h4>
               </a>
-              <p class="about">
-         At BayScopes IT, our journey is fueled by a deep passion for innovation and a commitment to excellence. We are not just a tech company; we are a team of experts dedicated to pushing boundaries and delivering cutting-edge solutions. With a client-centric approach, we collaborate closely with our partners, ensuring that each project is a unique reflection of their vision and goals. Our commitment to integrity, inclusivity, and sustainability sets us apart, guiding us as we navigate the dynamic landscape of technology. At the heart of our mission is the empowerment of businesses through transformative technology, where results-driven strategies and a human-centric focus converge.
+              <p class="about" style="font-size: 16px;">
+                At BayScopes IT, our journey is fueled by a deep passion for innovation and a commitment to excellence.
+                We are not just a tech company; we are a team of experts dedicated to pushing boundaries and delivering
+                cutting-edge solutions. With a client-centric approach, we collaborate closely with our partners,
+                ensuring that each project is a unique reflection of their vision and goals. Our commitment to
+                integrity, inclusivity, and sustainability sets us apart, guiding us as we navigate the dynamic
+                landscape of technology. At the heart of our mission is the empowerment of businesses through
+                transformative technology, where results-driven strategies and a human-centric focus converge.
               </p>
               <ul>
-                <li>
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> IT - Products
                 </li>
-                <li>
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> Software development
                 </li>
-                <li>
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> Web development
                 </li>
-                <li>
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> Mobile development
                 </li>
-                <li>
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> App development
-                </li>
-                <li>
+                </li style="font-size: 15px;">
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> QA Testing
-                </li>
-                <li>
+                </li style="font-size: 15px;">
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> Digital marketing
                 </li>
-                <li>
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> IT Consultancy
                 </li>
-                <li>
+                <li style="font-size: 15px;">
                   <i class="fa fa-check"></i> Product Design
                 </li>
               </ul>

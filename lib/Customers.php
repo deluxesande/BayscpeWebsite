@@ -157,7 +157,7 @@ public static function getAll() {
         $stmt = $db->prepare($sql);
         $stmt->bind_param('i', $this->id);
         $stmt->execute();
-        return $stmt->affected_rows;
+        return $stmt->affected_rows; 
     }
 
     
