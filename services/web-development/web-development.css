@@ -105,7 +105,7 @@ h3 span {
     width: 100%;
     height: 350px; /* Set your predefined height here */
     object-fit: cover;
-    object-position: center; /* This will center the image */
+    object-position: calc(30% + 10px) calc(30% + 10px);
 }
 
 .services-box {
@@ -170,4 +170,75 @@ h3 span {
         align-items: center;
         flex-direction: column;
     }
+}
+
+/* FAQ section */
+.faq-section {
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+}
+
+.faq-item input {
+    display: none;
+}
+
+.faq-item label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-item .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faq-item input:checked ~ .answer {
+    max-height: 100px; /* Adjust as needed */
+}
+
+/* How To Section */
+.how-to-section {
+    width: 100%;
+    margin-top: 60px;
+    padding: 2em 8%;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.how-to-section .section-center {
+    text-align: center;
+}
+
+.how-to-section .section-center h2,
+.how-to-section .section-center p {
+    color: #fff;
+}
+
+.how-to-section ol {
+    list-style-position: inside;
+    margin: 2em 0;
+}
+
+.how-to-section button {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.how-to-section button i {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
 }
